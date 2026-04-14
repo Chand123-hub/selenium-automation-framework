@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name = "AutomationSuite">
+  <test name ="NavigationTest">
+<classes>
+  <class name = "TestBHF.NavigationTest"/>
+</classes>
+</test>
+
+
+</suite>
