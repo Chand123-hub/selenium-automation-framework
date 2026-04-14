@@ -21,8 +21,8 @@ public class NavigationTest extends BaseTest{
 
 	        return new Object[][] {
 	            { "Chandana", "GS", "chandana@test.com", "(800) 230-2273", "Areas to Support" },
-	           // { "Ravi", "Kumar", "ravi@test.com", "(800) 230-2278", "Events & Fundraisers" },
-	           // { "Anita", "Sharma", "anita@test.com", "(800) 230-2290", "Ways to Give" }
+	            { "Ravi", "Kumar", "ravi@test.com", "(800) 230-2278", "Events & Fundraisers" },
+	            { "Anita", "Sharma", "anita@test.com", "(800) 230-2290", "Ways to Give" }
 	        };
 	    }
 	
