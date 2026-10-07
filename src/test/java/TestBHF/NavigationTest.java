@@ -14,48 +14,22 @@ import Base.BaseTest;
 
 
 public class NavigationTest extends BaseTest{
-
-	//Data driven
-	    @DataProvider(name = "contactData")
-	    public Object[][] getContactData() {
-
-	        return new Object[][] {
-	            { "Chandana", "GS", "chandana@test.com", "(800) 230-2273", "Areas to Support" },
-	            { "Ravi", "Kumar", "ravi@test.com", "(800) 230-2278", "Events & Fundraisers" },
-	            { "Anita", "Sharma", "anita@test.com", "(800) 230-2290", "Ways to Give" }
-	        };
-	    }
-	
-
-	@Test(dataProvider = "contactData")
-	public void verifywaystogivenav(String firstName,
-            String lastName,
-            String email,
-            String phone,
-            String messageType) {
+	@Test
+	public void verifywaystogivenav() {
 		
 		Homepage home = new Homepage(driver);
 		home.clickwaystogive();
 		
-		Waystogivepage give = new Waystogivepage(driver);
+Waystogivepage give = new Waystogivepage(driver);
 
     give.hoverOnAbout();
-   // give.hoverfoundstaff();
-    //give.clickCeopresident();
-    give.clickContactUs();
-    give.fillContactUsForm(firstName, lastName, email, phone);
-    give.selectMessageType(messageType);
-	give.submitContactUsForm();
-	driver.navigate().back();
-	
-	
-	 Getinvolvedpage get = new  Getinvolvedpage(driver);
+    give.hoverfoundstaff();
+    
+   	
+Getinvolvedpage get = new  Getinvolvedpage(driver);
 	 
-	// get.hovergetinvolve();
-	// get.clicktellbannerstories();
-	 get.Searchnav();
-	 //suggestion selection
-	 get.Autosuggestsearch("Banner", "cancer center innovation");
+	get.getinvolve();
+	get.clicktellbannerstories();
 	 
 	
 	}	
